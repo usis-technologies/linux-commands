@@ -22,6 +22,26 @@
 	<p>
 		<code>git checkout [local-branch-name]</code>
 	</p>
+
+	<h1>
+		Delete a local branch
+	</h1>
+	<p>
+		<code>git branch -d [local-branch-name]</code>
+	</p>
+
+	<h1>
+		Bringing recent changes from master branch to our new local branch
+	</h1>
+	<p>
+		<code>git checkout master</code><br/>
+		<code>git pull</code><br/>
+		<code>git checkout [local-branch-name]</code><br/>
+		<code>git merge master</code><br/><em>This will open up a merge comment window in <code>vi</code> editor. Just hit <code>ESC</code>, <code>:</code> (Colon), <code>wq</code> (Write and Quit). If any conflict is there, you need to resolve it.</em></code><br/>
+		<code>git add [file-names-got-merged]</code><br/>
+		<code>git commit -m '[message]'</code>
+	</p>
+
 	<h1>
 		Other general
 	</h1>
